@@ -25,5 +25,5 @@ jobs:
             -e MIXEWAY_PROJECT_NAME=marcingodniak_lab_secure_app \
             -e COMMIT_ID=test \
             -e BRANCH=main \
-            -v /opt/lab_sec_audit/sast:/opt/sources \
+            -v ${{ github.workspace }}:/opt/sources \
             mixeway/scanner:latest
